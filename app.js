@@ -34,7 +34,7 @@ function renderResult(result) {
 
 function displayYoutubeSearchData(data) {
     $(".js-search-results").empty();
-    const results = data.items.forEach(function(item) {
+    const results = data.items.forEach(item => {
         renderResult(item);
     });
 }
