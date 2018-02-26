@@ -1,0 +1,161 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 40px;
+  max-width: 900px;
+}
+
+a {
+  color: #db0a5b;
+}
+a:visited {
+  color: #f1a9a0;
+}
+
+/* Grid */
+
+.row {
+  width: 100%;
+  font-size: 0;
+}
+.col-4 {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  vertical-align: top;
+}
+
+.col-8 {
+  box-sizing: border-box;
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+}
+
+/* Main */
+
+.banner-logo {
+  text-align:center;
+  margin-top: 0;
+  font-weight: 300;
+  font-size: 3em;
+}
+.search-container {
+  text-align: center;
+}
+
+.js-search {
+  display: inline-block;
+}
+
+.js-query {
+  text-align: center;
+  width: 80%;
+  font-size: 1rem;
+  border: none;
+  border-bottom: solid 2px #eaeaea;
+}
+
+.js-query::placeholder {
+  color: #ccc;
+}
+
+.js-submit {
+  transition: .4s;
+  box-sizing: border-box;
+  height: 44px;
+  width: 80px;
+  margin-top: 20px;
+  font-size: 1em;
+  background-color: #eaeaea;
+  vertical-align: top;
+  border: solid 2px #eaeaea;
+  border-radius: 6px;
+}
+.js-submit:hover {
+  cursor: pointer;
+  background-color: #f3f3f3;
+  color: #333;
+  box-shadow: 4px 4px #333;
+  transform: translate(-4px, -4px);
+}
+
+.js-search-results {
+  text-align: left;
+}
+
+.search-result {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.search-results-header {
+  text-align: left;
+  font-weight: 300;
+}
+
+.search-result-title {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.search-result-thumbnail {
+  max-width: 100%;
+}
+
+.search-result-thumbnail:hover {
+  cursor: pointer;
+}
+
+.search-result-description {
+  display: none;
+}
+
+.search-result-channel {
+  font-size: .8rem;
+  color: gray;
+}
+
+@media screen and (min-width: 640px) {
+  .row {
+    width: 100%;
+    font-size: 0;
+  }
+  .col-4 {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 33.33%;
+    vertical-align: top;
+  }
+
+  .col-8 {
+    box-sizing: border-box;
+    vertical-align: top;
+    display: inline-block;
+    width: 66.66%;
+    padding-left: 40px;
+  }
+
+  .js-query {
+    text-align: left;
+    font-size: 2em;
+    border: none;
+    border-bottom: solid 2px #eaeaea;
+  }
+
+  .js-submit {
+    margin-top: 0;
+  }
+
+  .search-result {
+    text-align: left;
+  }
+
+  .search-result-description {
+    font-size: 1rem;
+    display: block;
+  }
+}
